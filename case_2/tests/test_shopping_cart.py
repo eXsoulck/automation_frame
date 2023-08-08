@@ -13,7 +13,7 @@ def test_item_in_cart(login):
 
 
 def test_continue_button(shopping_cart):
-    shopping_cart.click_on_continue_shopping()
+    shopping_cart.click_on_continue_shopping(shopping_cart.CONTINUE_SHOPPING_BUTTON)
     assert shopping_cart.driver.current_url in "https://www.saucedemo.com/inventory.html"
 
 
