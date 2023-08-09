@@ -6,4 +6,5 @@ from selenium import webdriver
 def driver():
     d = webdriver.Firefox()
     d.get("https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver")
-    return d
+    yield d
+    d.quit()
